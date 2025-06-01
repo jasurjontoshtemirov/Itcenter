@@ -37,10 +37,10 @@
                 </div>
                 <div class="navigations">
                     <ul class="list_items d-flex ">
-                        <li><a href="#">Bosh sahifa</a></li>
-                        <li><a href="#">Kurslar</a></li>
-                        <li><a href="#">Manzilimiz</a></li>
-                        <li><a href="#">Loyihalarimiz</a></li>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#kurslar">Kurslar</a></li>
+                        <li><a href="#projects">Loyihalarimiz</a></li>
+                        <li><a href="#location">Manzilimiz</a></li>
                         <li class="telefons"><a href="tel:+998979159292">+998(97) 915 92 92 </a></li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
 
         <!-- AboutMain -->
         <main>
-            <div class="Acc_container container">
+            <div class="Acc_container container" id="home">
                 <article>
                     <h1>IT sohasiga birinchi qadamni <u>hoziroq</u> qo'ying</h1>
                     <p>IT sohasida eng talab yuqori bo'lgan yo'nalishlaridan o'zingizga mos kursni tanlang va
@@ -96,10 +96,14 @@
                     <img src="assign/aboutss.jpg" class="card-img-top" alt="...">
                 </div>
             </div>
-
         </main>
+        </div>
+
     </div>
-    </div>
+
+    <section class="kurslar-section" id="kurslar">
+        <h1>Kurslar</h1>
+    </section>
 
     <section class="our-team-section">
         <div class="our-team-head-line">
@@ -155,7 +159,7 @@
 
     </section>
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
 
         <div class="projects-head-line">
             <h1>Projects</h1>
@@ -204,18 +208,117 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
-    <section class="location-section">
-        <div class="projects-head-line">
+    <section class="location-section" id="location">
+
+        <div class="location-head-line">
             <h1>Manzilimiz</h1>
-            <p>You can see our all projects here in this section.</p>
+            <p>Open Web Academy 2021-yilning 5-mart kunida Qarshi shahridagi Yoshlar markazi joylashgan binoning
+                3-qavatida rasmiy faoliyatini boshlagan</p>
         </div>
-        <div class="location-info">
+
+        <div class="location-information">
+
+            <div class="location-info">
+                <div class="location-info-card">
+                    <div class="location-info-card-1">
+                        <p>Manzil</p>
+                        <a href="https://www.google.com/maps/place/IT+Center+Bulungur/@39.762079,67.269274,712m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3f4d2f258d9d1769:0x39f68c1ba8ecddd2!2sIT+Center+Bulungur!8m2!3d39.761988!4d67.2692742!16s%2Fg%2F11p0z5xshj!3m5!1s0x3f4d2f258d9d1769:0x39f68c1ba8ecddd2!8m2!3d39.761988!4d67.2692742!16s%2Fg%2F11p0z5xshj?hl=ru&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            Google maps
+                        </a>
+
+                    </div>
+                    <div class="location-info-card-2">
+                        <h2>Samarqand viloyati, bulung'ur tumani IT markazi.</h2>
+                    </div>
+                </div>
+
+                <div class="phone-number-card">
+                    <div class="phone-number-card-1">
+                        <p>Telefon</p>
+                        <h2>+998(97) 915 92 92</h2>
+                    </div>
+                    <div class="phone-number-card-2">
+                        <p>Email</p>
+                        <h2>info@itc.uz</h2>
+                    </div>
+                </div>
+
+                <div class="phone-number-card">
+                    <div class="phone-number-card-1">
+                        <p>Ish kunlari</p>
+                        <h2>Dush-Shan</h2>
+                    </div>
+                    <div class="phone-number-card-2">
+                        <p>Vadt</p>
+                        <h2>09:00-21:00</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="location-image">
+                <img src="assign/img_main.jpg" alt="">
+            </div>
 
         </div>
-        <div class="location-image">
-            
-        </div>
+
     </section>
+
+    <footer>
+
+        <div class="form-container">
+            <form class="form">
+                <div class="form-group">
+                    <label for="email">Ism</label>
+                    <input type="text" id="email" name="email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Murojat qilish</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+                </div>
+                <button class="form-submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <a href="#">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-telegram"></i>
+                    Telegram
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </div>
+            </a>
+             <a href="#">
+                <div class="footer-icons">
+                    <i class="fa-solid fa-phone"></i>
+                    +998(97) 915 92 92
+                </div>
+            </a>
+        </div>
+
+        <div class="footer-location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1917.7794083863744!2d67.26754713455472!3d39.762019977408386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d2f258d9d1769%3A0x39f68c1ba8ecddd2!2sIT%20Center%20Bulungur!5e1!3m2!1sru!2s!4v1748742758114!5m2!1sru!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </footer>
+
+    <div class="footer-copy-right">
+        <p>It center Bulungur &copy; 2025</p>
+    </div>
 
     <script>
     </script>
