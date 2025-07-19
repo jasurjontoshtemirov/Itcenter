@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -23,6 +25,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -58,7 +63,7 @@
                     <p>IT sohasida eng talab yuqori bo'lgan yo'nalishlaridan o'zingizga mos kursni tanlang va
                         sohaning
                         mutaxassisga aylaning </p>
-                    <a href="#">
+                    <a href="#kurslar">
                         <button type="button" class="mainbutton btn btn-outline-warning">Kurslar bilan
                             tanishish</button>
                     </a><br><br>
@@ -100,7 +105,7 @@
 
                 <div class="our-team-card">
 
-                    <img src="/assign/AlisherAbduvoitov.jpg" alt="image">
+                    <img src="assign/AlisherAbduvoitov.jpg" alt="image">
 
                     <div class="our-team-card-info">
                         <h1>
@@ -115,7 +120,7 @@
                 <div class="our-team-card">
 
                     <a href="http://jasurjon.uz/" target="_blank">
-                        <img src="/assign/jasurjon.jpg" alt="image">
+                        <img src="assign/jasurjon.jpg" alt="image">
                     </a>
 
                     <div class="our-team-card-info">
@@ -130,7 +135,7 @@
 
                 <div class="our-team-card">
 
-                    <img src="/assign/shaxriyor.jpg" alt="image">
+                    <img src="assign/shaxriyor.jpg" alt="image">
 
                     <div class="our-team-card-info">
                         <h1>
@@ -157,7 +162,7 @@
             <div class="course-cards-container">
                 <div class="course-card">
                     <img src="assign/kompyutersavc.jpg" alt="workstation" />
-                    <h2>Kompyuter savodxonligi</h2>
+                    <h2 class="course-card-headingtwo">Kompyuter savodxonligi</h2>
                     <p>
                         Kompyuter savodxonligi kursi orqali siz kompyuterning asosiy funksiyalarini, operatsion
                         tizimlarni
@@ -171,7 +176,7 @@
 
                 <div class="course-card">
                     <img src="assign/frontend.png" alt="It Center bulungur Frontend dasturlash" />
-                    <h2>Frontend Dasturlash </h2>
+                    <h2 class="course-card-headingtwo">Frontend Dasturlash </h2>
                     <p>
                         Frontend dasturlash kursi orqali siz veb-saytlar va ilovalar yaratish uchun HTML, CSS va
                         JavaScript
@@ -184,7 +189,7 @@
 
                 <div class="course-card">
                     <img src="assign/dmed.png" alt="dmed" />
-                    <h2>DMED</h2>
+                    <h2 class="course-card-headingtwo">DMED</h2>
                     <p>
                         DMED – bu Oʻzbekiston Respublikasi Sogʻliqni saqlash vazirligi tomonidan ishlab chiqilgan yagona
                         tibbiyot tizimi boʻlib, u tibbiy xizmatlar va maʼlumotlardan foydalanishni osonlashtirishga
@@ -198,172 +203,133 @@
         </div>
 
     </section>
-
-
-
     <section class="projects-section" id="projects">
-
-        <div class="projects-head-line">
-            <h1>Projects</h1>
-            <p>You can see our all projects here in this section.</p>
+        <div class="all_section_project">
+            <h2>Bitiruvchilarimiz</h2>
+            <p>
+                Dasturlarimizning afzalliklari haqida cheksiz gapirishimiz mumkin. Lekin
+                bu haqida talabalarimiz natijasi orqali bilib olishingiz mumkin.
+            </p>
+            <div class="carousel-container">
+                <button id="prevBtn" class="arrow" aria-label="Previous">←</button>
+                <div class="cards-wrapper" id="cardsWrapper"></div>
+                <button id="nextBtn" class="arrow" aria-label="Next">→</button>
+            </div>
         </div>
-
-        <div class="projects-row">
-
-            <div class="laptop">
-                <iframe class="screen" src="https://ad-portfolio-real.netlify.app/" frameborder="0">
-                    <div class="header"></div>
-                </iframe>
-                <div class="keyboard"></div>
-            </div>
-
-            <div class="laptop">
-                <iframe class="screen" src="https://silver-tapioca-701dc9.netlify.app/" frameborder="0">
-                    <div class="header"></div>
-                </iframe>
-                <div class="keyboard"></div>
-            </div>
-
-        </div>
-
-        <div class="projects-row">
-
-            <div class="laptop">
-                <iframe class="screen" src="https://p-797697.lovable.app/" frameborder="0">
-                    <div class="header"></div>
-                </iframe>
-                <div class="keyboard"></div>
-            </div>
-
-            <div class="laptop">
-                <iframe class="screen" src="https://ad-portfolio-real.netlify.app/" frameborder="0">
-                    <div class="header"></div>
-                </iframe>
-                <div class="keyboard"></div>
-            </div>
-
-        </div>
-
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-
-    <section class="location-section" id="location">
-
-        <div class="location-head-line">
-            <h1>Manzilimiz</h1>
-            <p>Open Web Academy 2021-yilning 5-mart kunida Qarshi shahridagi Yoshlar markazi joylashgan binoning
-                3-qavatida rasmiy faoliyatini boshlagan</p>
-        </div>
-
-        <div class="location-information">
-
-            <div class="location-info">
-                <div class="location-info-card">
-                    <div class="location-info-card-1">
-                        <p>Manzil</p>
-                        <a href="https://www.google.com/maps/place/IT+Center+Bulungur/@39.762079,67.269274,712m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3f4d2f258d9d1769:0x39f68c1ba8ecddd2!2sIT+Center+Bulungur!8m2!3d39.761988!4d67.2692742!16s%2Fg%2F11p0z5xshj!3m5!1s0x3f4d2f258d9d1769:0x39f68c1ba8ecddd2!8m2!3d39.761988!4d67.2692742!16s%2Fg%2F11p0z5xshj?hl=ru&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
-                            target="_blank">
-                            Google maps
-                        </a>
-
-                    </div>
-                    <div class="location-info-card-2">
-                        <h2>Samarqand viloyati, bulung'ur tumani IT markazi.</h2>
-                    </div>
-                </div>
-
-                <div class="phone-number-card">
-                    <div class="phone-number-card-1">
-                        <p>Telefon</p>
-                        <h2>+998(97) 915 92 92</h2>
-                    </div>
-                    <div class="phone-number-card-2">
-                        <p>Email</p>
-                        <h2>info@itc.uz</h2>
-                    </div>
-                </div>
-
-                <div class="phone-number-card">
-                    <div class="phone-number-card-1">
-                        <p>Ish kunlari</p>
-                        <h2>Dush-Shan</h2>
-                    </div>
-                    <div class="phone-number-card-2">
-                        <p>Vaqt</p>
-                        <h2>09:00-21:00</h2>
-                    </div>
-                </div>
-
-            </div>
-            <div class="location-image">
-                <img src="assign/img_main.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <div class="form-container">
-            <form class="form">
-                <div class="form-group">
-                    <label for="email">Ism</label>
-                    <input type="text" id="email" name="email" required="">
-                </div>
-                <div class="form-group">
-                    <label for="textarea">Murojat qilish</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
-                </div>
-                <button class="form-submit-btn" type="submit">Submit</button>
-            </form>
-        </div>
-
-        <div class="footer-info">
-            <a href="#">
-                <div class="footer-icons">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </div>
-            </a>
-            <a href="#">
-                <div class="footer-icons">
-                    <i class="fa-brands fa-telegram"></i>
-                    Telegram
-                </div>
-            </a>
-            <a href="#">
-                <div class="footer-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    Facebook
-                </div>
-            </a>
-            <a href="#">
-                <div class="footer-icons">
-                    <i class="fa-solid fa-phone"></i>
-                    +998(97) 915 92 92
-                </div>
-            </a>
-        </div>
-
-        <div class="footer-location">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1917.7794083863744!2d67.26754713455472!3d39.762019977408386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d2f258d9d1769%3A0x39f68c1ba8ecddd2!2sIT%20Center%20Bulungur!5e1!3m2!1sru!2s!4v1748742758114!5m2!1sru!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </footer>
-
-    <div class="footer-copy-right">
-        <p>It center Bulungur &copy; 2025</p>
-    </div>
 
     <script>
+        const graduates = [
+            {
+                img: "https://storage.googleapis.com/a1aa/image/e29fecee-1b5a-4348-5580-a97ad9057636.jpg",
+                imgAlt: "Portrait photo of Shaxzod Shokirov wearing a beige shirt",
+                company: "Algorithm kompaniyasi",
+                name: "Shaxzod Shokirov",
+                teacherIcon: "fas fa-user",
+                teacher: "Shaxzod Jumayev",
+                courseIcon: "far fa-credit-card",
+                course: "Front-end",
+                positionIcon: "fas fa-user-tie",
+                position: "Front-end dasturchi (Junior)",
+                telegram: "https://t.me/shaxzod_shokirov",
+            },
+            {
+                img: "https://storage.googleapis.com/a1aa/image/0c32b29c-44aa-4044-ac20-034cf9af7bc3.jpg",
+                imgAlt: "Portrait photo of Azamat Ochilov wearing a white t-shirt",
+                company: "Open Web Academy kompaniyasi",
+                name: "Azamat Ochilov",
+                teacherIcon: "fas fa-user",
+                teacher: "Ali Odiljonov",
+                courseIcon: "far fa-credit-card",
+                course: "Front-end",
+                positionIcon: "fas fa-user-tie",
+                position: "Teacher assistant",
+                telegram: "https://t.me/shaxzod_shokirov",
+            },
+            {
+                img: "https://placehold.co/72x72/png?text=Graduate+3",
+                imgAlt: "Portrait photo of a graduate 3 placeholder image",
+                company: "Tech Solutions kompaniyasi",
+                name: "Dilshod Karimov",
+                teacherIcon: "fas fa-user",
+                teacher: "Nodirbek Tursunov",
+                courseIcon: "far fa-credit-card",
+                course: "Back-end",
+                positionIcon: "fas fa-user-tie",
+                position: "Back-end dasturchi (Senior)",
+                telegram: "https://t.me/shaxzod_shokirov",
+            },
+            {
+                img: "https://placehold.co/72x72/png?text=Graduate+4",
+                imgAlt: "Portrait photo of a graduate 4 placeholder image",
+                company: "Creative Labs kompaniyasi",
+                name: "Malika Yusupova",
+                teacherIcon: "fas fa-user",
+                teacher: "Sardorbek Akhmedov",
+                courseIcon: "far fa-credit-card",
+                course: "UI/UX Design",
+                positionIcon: "fas fa-user-tie",
+                position: "Designer",
+                telegram: "https://t.me/shaxzod_shokirov",
+            },
+        ];
+
+        const cardsWrapper = document.getElementById("cardsWrapper");
+        let currentIndex = 0;
+
+        function createCard(data) {
+            const card = document.createElement("article");
+            card.className = "card";
+
+            card.innerHTML = `
+        <div class="card-header">
+          <img src="${data.img}" alt="${data.imgAlt}"/>
+          <div class="card-info-header-and-img">
+            <div class="company">${data.company}</div>
+            <a href="${data.telegram}" target="_blank"><h3>${data.name}</h3></a>
+          </div>
+        </div>
+        
+        <dl>
+          <div>
+            <dt>O'qituvchisi:</dt>
+            <dd><i class="${data.teacherIcon}"></i>${data.teacher}</dd>
+          </div>
+          <div>
+            <dt>O'qigan kursi:</dt>
+            <dd><i class="${data.courseIcon}"></i>${data.course}</dd>
+          </div>
+          <div>
+            <dt>Lavozimi:</dt>
+            <dd><i class="${data.positionIcon}"></i>${data.position}</dd>
+          </div>
+        </dl>
+      `;
+            return card;
+        }
+
+        function renderCards() {
+            cardsWrapper.innerHTML = "";
+            for (let i = 0; i < 3; i++) {
+                const index = (currentIndex + i) % graduates.length;
+                cardsWrapper.appendChild(createCard(graduates[index]));
+            }
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + graduates.length) % graduates.length;
+            renderCards();
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % graduates.length;
+            renderCards();
+        });
+
+        renderCards();
     </script>
+
+
 </body>
 
 </html>
