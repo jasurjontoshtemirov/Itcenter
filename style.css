@@ -282,7 +282,7 @@ article p {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-    object-position:  center;
+    object-position:  center;12
     transition: .3s;
 }
 .our-team-card:hover img {
@@ -325,7 +325,8 @@ article p {
 .our-team {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .kurslar-section {
@@ -339,6 +340,7 @@ article p {
     width: 1320px;
     padding: 70px 40px;
     color: white;
+
 }
 
 .main_course_container h1 {
@@ -412,10 +414,7 @@ article p {
     transition: background-color 0.3s ease;
 }
 
-/* .btn_main{
-    margin-top:-36px ;
-    
-} */
+
 .btn_main2 {
     margin-top: -5px;
 }
@@ -428,20 +427,22 @@ article p {
 
 /*  karusel */
    .projects-section {
-      padding: 64px 24px;
+    width: 100%;
+    height: 800px;
+      padding: 50px 24px;
       background-color:#337A57 ;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .projects-section h2 {
+    .all_section_project h2 {
       font-weight: 800;
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
     .projects-section p {
-      max-width: 480px;
-      font-size: 0.875rem;
+      max-width: 680px;
+      font-size: 1.5rem;
       line-height: 1.4;
       margin-bottom: 3rem;
       color: rgba(255,255,255,0.9);
@@ -452,6 +453,7 @@ article p {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
     }
     button.arrow {
       background: none;
@@ -466,22 +468,27 @@ article p {
       height: 50px;
       line-height: 32px;
       text-align: center;
+      cursor: pointer;
     }
     button.arrow:hover {
       opacity: 0.8;
+      cursor: pointer;
     }
     button#prevBtn {
       left: -58px;
+      cursor: pointer;
     }
     button#nextBtn {
         left: 1730px;
         top: 147px;
+        cursor: pointer;
     }
     .cards-wrapper {
       display: flex;
       gap: 32px;
       /* overflow: hidden; */
       width: 100%;
+      flex-wrap: wrap;
     }
     .card {
       background: white;
@@ -534,6 +541,7 @@ article p {
       padding-right: 25px;
       text-align: center;
     }
+
     @media (max-width: 768px) {
       section {
         padding: 32px 16px;
@@ -558,6 +566,185 @@ article p {
         flex-direction: column;
         justify-content: center;
     }
+
+    .working_portfolio{
+        width: 100%;
+        height:800px;
+
+        
+    }
+  
+    
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+
+
+    .project-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 0;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+   .project-header i {
+      font-size: 1.5rem;
+    }
+
+    .project-header .yellow {
+      color: #facc15;
+    }
+
+    .project-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px 32px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .project-container{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .project-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+   .wide {
+      background-color: #05053e;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .wide img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (min-width: 640px) {
+      .wide img {
+        height: 300px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .wide img {
+        height: 280px;
+      }
+    }
+
+    .caption {
+      background-color: #facc15;
+      color: black;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 8px 12px;
+      flex-shrink: 0;
+    }
+
+    /* For the two wide projects */
+    .wide {
+      grid-column: span 2;
+    }
+
+    @media (min-width: 1024px) {
+      .wide {
+        grid-column: span 2;
+      }
+    }
+
+    /* Button container */
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+      margin-bottom: 48px;
+    }
+
+    button.view-all {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    button.view-all:hover {
+      box-shadow: 0 0 10px 2px #7c3aed;
+    }
+
+    /* Scroll to top button */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #facc15;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      transition: box-shadow 0.3s ease;
+      z-index: 10;
+    }
+
+    #scrollTopBtn:hover {
+      box-shadow: 0 0 15px 3px #facc15;
+    }
+
+    /* Chat support button */
+    #chatBtn  {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #facc15;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      transition: box-shadow 0.3s ease;
+      z-index: 10;
+    }
+
+    #chatBtn:hover {
+      box-shadow: 0 0 15px 3px #facc15;
+    }
+
 
 
 
