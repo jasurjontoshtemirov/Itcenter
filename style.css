@@ -257,13 +257,15 @@ article p {
     color: #FFFFFF;
     width: 70%;
 }
-.all_main_info{
+
+.all_main_info {
     width: 1320px;
     /* border: 3px solid red; */
     height: 100vh;
     padding-left: 40px;
     padding-right: 40px;
 }
+
 .our-team-card {
     width: 400px;
     height: 400px;
@@ -271,10 +273,11 @@ article p {
     background: rgba(59, 59, 59, 1);
     transition: 0.7s;
 }
+
 .our-team-card img {
     width: 400px;
     object-fit: cover;
-    height:auto;
+    height: auto;
     min-width: 260px;
     border-radius: 10px 10px 0 0;
     -webkit-filter: grayscale(1);
@@ -282,17 +285,17 @@ article p {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-    object-position:  center;12
+    object-position: center;
     transition: .3s;
 }
+
 .our-team-card:hover img {
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
     transition: .3s;
 }
-.our-team-card  
 
-.our-team-card:hover {
+.our-team-card .our-team-card:hover {
     transform: scale(0.93);
     transition: 0.7s;
 }
@@ -331,16 +334,15 @@ article p {
 
 .kurslar-section {
     width: 100%;
-    height: 900px;
+    height: 1200px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main_course_container {
     width: 1320px;
-    padding: 70px 40px;
     color: white;
-
 }
 
 .main_course_container h1 {
@@ -386,7 +388,7 @@ article p {
 }
 
 .course-card-headingtwo {
-    font-size: 24px ;
+    font-size: 24px;
 
     margin: 20px 0 10px;
     color: white;
@@ -426,329 +428,234 @@ article p {
 
 
 /*  karusel */
-   .projects-section {
+.projects-section {
     width: 100%;
     height: 800px;
-      padding: 50px 24px;
-      background-color:#337A57 ;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .all_section_project h2 {
-      font-weight: 800;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .projects-section p {
-      max-width: 680px;
-      font-size: 1.5rem;
-      line-height: 1.4;
-      margin-bottom: 3rem;
-      color: rgba(255,255,255,0.9);
-    }
-    .carousel-container {
-      position: relative;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    button.arrow {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 2rem;
-      cursor: pointer;
-      user-select: none;
-      position: absolute;
-      padding: 0;
-      width: 50px;
-      height: 50px;
-      line-height: 32px;
-      text-align: center;
-      cursor: pointer;
-    }
-    button.arrow:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-    button#prevBtn {
-      left: -58px;
-      cursor: pointer;
-    }
-    button#nextBtn {
-        left: 1730px;
-        top: 147px;
-        cursor: pointer;
-    }
-    .cards-wrapper {
-      display: flex;
-      gap: 32px;
-      /* overflow: hidden; */
-      width: 100%;
-      flex-wrap: wrap;
-    }
-    .card {
-      background: white;
-      color: black;
-      border: 2px solid black;
-      padding: 32px;
-      width: 550px;
-      height: 350px;
-      box-sizing: border-box;
-      flex-shrink: 0;
-    }
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    .card-header img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-    }
-    .company {
-      font-size: 0.75rem;
-      color: #6b7280; /* gray-500 */
-    }
-    .card-header h3 {
-      margin: 10 0 24px 0;
-      font-weight: 700;
-      font-size: 1.4rem;
-      color: #0D6EFD;
+    padding: 50px 24px;
+    background-color: #337A57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    }
-    dl {
-        /* border: 2px solid black; */
-      font-size: 1.15rem;
-    }
-    dt {
-      font-weight: 700;
-      float: left;
-    }
-    dd {
-      margin: 10px 0 12px 0;
-      padding-left: 210px;
-      font-weight: 700;
-      gap: 8px;
-    }
-    dd i {
-      width: 16px;
-      padding-right: 25px;
-      text-align: center;
-    }
+.all_section_project h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
-    @media (max-width: 768px) {
-      section {
+.projects-section p {
+    max-width: 680px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button.arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button.arrow:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button#prevBtn {
+    left: -58px;
+    cursor: pointer;
+}
+
+button#nextBtn {
+    left: 1730px;
+    top: 147px;
+    cursor: pointer;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 32px;
+    /* overflow: hidden; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    padding: 32px;
+    width: 550px;
+    height: 350px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.card-header img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.company {
+    font-size: 0.75rem;
+    color: #6b7280;
+    /* gray-500 */
+}
+
+.card-header h3 {
+    margin: 10 0 24px 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #0D6EFD;
+
+}
+
+dl {
+    /* border: 2px solid black; */
+    font-size: 1.15rem;
+}
+
+dt {
+    font-weight: 700;
+    float: left;
+}
+
+dd {
+    margin: 10px 0 12px 0;
+    padding-left: 210px;
+    font-weight: 700;
+    gap: 8px;
+}
+
+dd i {
+    width: 16px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    section {
         padding: 32px 16px;
-      }
-      .cards-wrapper {
+    }
+
+    .cards-wrapper {
         gap: 16px;
-      }
-      .card {
+    }
+
+    .card {
         width: 280px;
         padding: 24px;
-      }
-      button#prevBtn {
+    }
+
+    button#prevBtn {
         left: -32px;
-      }
-      button#nextBtn {
+    }
+
+    button#nextBtn {
         right: -32px;
-      }
     }
+}
 
-    .card-info-header-and-img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.card-info-header-and-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .working_portfolio{
-        width: 100%;
-        height:800px;
+.working_portfolio {
+    width: 100%;
+    height: 800px;
 
-        
-    }
+
+}
+
+
+/* Children projects */
+.children_project {
+    border: 2px solid red;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container_project {
+    border: 3px solid grey;
+    width: 1714px;
+    height: inherit;
+
+
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
   
-    
-     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
-    .project-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      padding: 16px 0;
-      font-weight: 800;
-      font-size: 1.25rem;
-    }
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
 
-   .project-header i {
-      font-size: 1.5rem;
-    }
-
-    .project-header .yellow {
-      color: #facc15;
-    }
-
-    .project-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 16px 32px;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 12px;
-    }
-
-    @media (min-width: 640px) {
-      .project-container{
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .project-container {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-   .wide {
-      background-color: #05053e;
-      border-radius: 6px;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .wide img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      display: block;
-    }
-
-    @media (min-width: 640px) {
-      .wide img {
-        height: 300px;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .wide img {
-        height: 280px;
-      }
-    }
-
-    .caption {
-      background-color: #facc15;
-      color: black;
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 8px 12px;
-      flex-shrink: 0;
-    }
-
-    /* For the two wide projects */
-    .wide {
-      grid-column: span 2;
-    }
-
-    @media (min-width: 1024px) {
-      .wide {
-        grid-column: span 2;
-      }
-    }
-
-    /* Button container */
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 32px;
-      margin-bottom: 48px;
-    }
-
-    button.view-all {
-      border: 1px solid white;
-      background: transparent;
-      color: white;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 8px 24px;
-      border-radius: 6px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: box-shadow 0.3s ease;
-    }
-
-    button.view-all:hover {
-      box-shadow: 0 0 10px 2px #7c3aed;
-    }
-
-    /* Scroll to top button */
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #facc15;
-      color: black;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      transition: box-shadow 0.3s ease;
-      z-index: 10;
-    }
-
-    #scrollTopBtn:hover {
-      box-shadow: 0 0 15px 3px #facc15;
-    }
-
-    /* Chat support button */
-    #chatBtn  {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      background-color: #facc15;
-      color: black;
-      border: none;
-      border-radius: 50%;
-      width: 56px;
-      height: 56px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 22px;
-      transition: box-shadow 0.3s ease;
-      z-index: 10;
-    }
-
-    #chatBtn:hover {
-      box-shadow: 0 0 15px 3px #facc15;
-    }
-
-
-
-
-
-
-
-
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
